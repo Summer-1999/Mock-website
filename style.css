@@ -1,0 +1,459 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: "Montserrat";
+    color:#3d2514;
+}
+
+button {
+    background-color: transparent;
+}
+
+button:hover {
+    filter: saturate(80%);
+}
+
+button:active {
+    filter: brightness(50%);
+}
+
+div {
+    margin: 0 auto;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card button {
+    background-color: #df1b1c;
+    font-family: "AlfaSlabOne";
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: white;
+    padding: 1em 2em;
+    margin: 1em auto;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bebas-neue * {
+    font-family: "BebasNeue";
+    letter-spacing: 0.2em;
+}
+
+
+/* TOP SECTION */
+
+#logo {
+    max-width: 40vw;
+}
+
+#top, #main {
+    background-color: #FFC74C;
+}
+
+#top {
+    position: sticky;
+    top: 0;
+}
+
+header {
+    padding: 2vw 2vw 0;
+}
+
+header img{
+    max-width: none;
+}
+
+#delivery {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    align-items: center;
+    column-gap: 1%;
+    margin: 10px;
+}
+
+#delivery > div {
+    text-wrap: nowrap;
+    font-weight: bold;
+}
+
+#delivery > img {
+    max-width: 35px;  
+    filter: invert(100%);
+    padding: 0 8px;
+}
+
+#top #hamburger, #top #close-menu {
+    display: none;
+}
+
+nav  {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: end;
+	gap: 10px;
+    padding: 0 2vw;
+}
+
+#top a, #top button{
+    display: flex;
+    padding: 0.3em 0.75em;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+nav a:hover, #cart-button:hover {
+    background-color: #3d2514;
+    color: white;
+}
+
+a:visited { 
+    color: inherit;
+}
+
+
+/* CART */
+
+#cart-button > img {
+    height: 28px;
+    max-width: none
+}
+
+#cart-button:hover > img {
+    filter: invert(100%);
+}
+
+#cart {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 2;
+    background-color: #00000077;
+    align-content: center;
+    font-size: 1.5em;
+}
+
+#cart * {
+    font-size: inherit;
+}
+
+#cart > div {
+    margin: auto;
+    width: 80vw;
+    background: white;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    border: 0.2em solid #3d2514;
+}
+
+#cart > div > div {
+    padding: 0.5em;
+}
+
+#cart > div > div:first-of-type {
+    border-bottom: 0.1em solid #3d2514;
+}
+
+#cart > div >  div > div:first-of-type {
+    margin: 0;
+}
+
+#prices {
+    justify-content: end;
+    padding-bottom: 2%;
+}
+
+#cart th, #cart td {
+    text-align: right;
+    padding: 0.5em;
+}
+
+#cart td:first-of-type {
+    padding-left: 15cqw;
+}
+
+#cart-items > :nth-child(odd) {
+    background-color: #00000011;
+}
+
+#cart-items > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center; 
+    border-bottom: 0.2em solid #3d2514;
+    padding: 0 2%;
+    text-align: center;
+}
+
+#cart-items > div:first-child{
+    border-top: 0.2em solid #3d2514;
+}
+
+#cart-items img {
+    height: 6em;
+    width: 6em;
+    object-fit: contain;
+    margin: 0.75em;
+    border-radius: 0.5em;
+    border: 0.1em solid #3d2514;
+}
+
+#cart-items > div >  div:first-of-type {
+    width: 100%;
+}
+
+#cart-items > div > button {
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    border-radius: 0.5em;
+    color: white;
+    background-color: #3d2514;
+}
+
+#empty-cart {
+    text-align: center;
+}
+
+#close-cart {
+    padding: 0.5em;
+}
+
+#continue-shopping, #checkout {
+    line-height: 0.9em;
+    padding: 0.2em 1em;
+    border-radius: 0.3em;
+    background-color: #D8D4D1;
+    align-self: stretch;
+}
+
+#checkout {
+    background-color: #FFBA53;
+}
+
+
+/* MAIN SECTION */
+
+#main {
+    max-height: 50vw;
+}
+
+#main > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding: 0 2vw;
+}
+
+#main-burger {
+    width: 50vw;
+    object-position: 0 -5vw;
+}
+
+#main-title {
+    padding: 15% 0;
+}
+
+#main-title img {
+    width: 25vw;
+}
+
+#main-title p{
+    font-family: "AlfaSlabOne";
+    font-size: 3.5vw;
+    text-transform: uppercase;
+    text-shadow: 0.1em 0.1em rgba(255, 255, 255, 0.7);
+}
+
+#main-title p span{
+    font-family: inherit;
+    font-size: 2em;
+}
+
+
+/* BANNERS SECTION */
+
+#banners > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 4%;
+    column-gap: 3%;
+    justify-content: center;
+    padding: 0 5vw;
+    margin: 4% auto;
+}
+
+#left-banner {
+    grid-row: 1 / 3;
+}
+
+
+/* MENU SECTION*/
+
+#menu > div {
+    justify-content: center;
+    text-align: center;
+    margin: 4vw auto
+}
+
+#menu > div:nth-child(1) > div{
+    margin: 2vw auto;
+    padding: 0 2vw;
+}
+
+#menu > div:nth-child(1) > div:nth-child(1) > p {
+    background-color:#FFC74C;
+    padding: 0.5em 1em 0.4em;
+    font-family: "BebasNeue";
+    font-size: 2em;
+    width: fit-content;
+    margin: inherit;
+}
+
+#menu > div:nth-child(1) > div:nth-child(2) > p {
+    font-family: "AlfaSlabOne" ;
+    font-size: 3.5em;
+}
+
+#menu > div:nth-child(1) > div:nth-child(3) > p {
+    font-size: 1.3em;
+    font-weight: lighter;
+    margin: 0 10vw;
+}
+
+#menu .card {
+    margin: 2%;
+}
+
+#menu .card img {
+    padding: 2%
+}
+
+.burger-name, .burger-description{
+    margin: 0.5em auto
+}
+
+.burger-name{
+    font-family: "BebasNeue";
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.burger-description{
+    font-size: 1.3em;
+    padding: 0 2em;
+}
+
+
+@media screen and (min-width: 801px) {
+    nav {
+        display: grid !important; 
+        /* overrride visibility after being set inline by JS */
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #banners > div {
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        padding: 0 10vw;
+    }
+
+    #delivery {
+        display: none;
+    }
+
+    #top #hamburger, #top #close-menu {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        gap: 0;
+        background-color: #ffffffe6;
+        height: 100%;
+        width: 250px;
+        position: fixed;
+        z-index: 1;
+        top:0;
+        right: 0;
+        padding: 0;
+    }
+
+    nav > * {
+        height: fit-content;
+        border-bottom: 4px solid #3d2514 ;
+    }
+    
+    #top a, #top button {
+        font-size: 2.5em;
+        padding: 0.5em;
+        justify-content: end;
+    }
+    
+    * {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url(Asset/fonts/BebasNeue-Regular.otf);
+}
+
+@font-face {
+    font-family: "BebasNeue";
+    src: url(Asset/fonts/BebasNeue\ Bold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(Asset/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "AlfaSlabOne";
+    src: url(Asset/fonts/AlfaSlabOne-Regular.ttf);
+}

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Burger House</title>
+        <meta name="description" content="Burger House home page">
+        <meta name="author" content="Burger House comp.">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+    
+    <div id="cart" class="bebas-neue">
+        <div>
+            <div class="flex-row">
+                <div>Shopping Cart</div>
+                <button id="close-cart" class="x-button" onclick="closeCart()">✖</button>
+            </div>
+
+            <div id="cart-items">
+                
+            </div>
+
+            <div id="empty-cart" class="flex-container">
+                Cart is Empty
+            </div>
+
+            <div id="prices" class="flex-container">
+                <table>
+                    <tr>
+                        <th>Sub-total</th>
+                        <td>$</td>
+                        <td id="subtotal">0.00</td>
+                    </tr>
+                    <tr>
+                        <th>Tax</th>
+                        <td>$</td>
+                        <td id="tax">0.00</td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <td>$</td>
+                        <td id="total">0.00</td>
+                    </tr>
+                </table>
+            </div>
+    
+            <div class="flex-row">
+                <button id="continue-shopping" onclick="closeCart()" class="bebas-neue">Continue<br>Shopping</button>
+                <button id="checkout" class="bebas-neue">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="top">
+        <header class="flex-row">
+            <picture>
+                <img id="logo" src="Asset/img/logo.png" alt="logo">
+            </picture>
+
+            <div id="delivery">
+                <img src="Asset/img/delivery-icon.png" alt="delivery-icon">
+                <div>Express Delivery +1 234 567 890</div>
+            </div>
+            
+            <button id="hamburger" onclick="openSidebar()"><img src="Asset/img/menu-mobile.png" alt="hamburger"></button>
+        </header>
+
+
+        <nav class="bebas-neue">
+            
+                <button id="close-menu" class="x-button" onclick="closeSidebar()">✖</button>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#our-story">Our Story</a>
+                <a href="#contact">Contact Us</a>
+                <button id="cart-button" onclick="openCart()"><img src="Asset/img/cart.png" alt="Cart"></button>
+            
+        </nav>
+    </section>
+
+    <section id="main">
+       <div>
+            <div id="main-title">
+                <img src="Asset/img/main-subtitle.png" alt="main-subtitle">
+                <p> <span>Burger</span><br>Week</p>
+            </div>
+            <div>
+                <img id="main-burger" src="Asset/img/main-burger.png" alt="main-burger">
+            </div>
+            
+       </div> 
+    </section>
+
+    <section id="banners">
+        <div>
+            <div id="left-banner" class="card"><img src="Asset/img/left-banner.png" alt="left-banner"></div>
+            <div id="right-bannertop" class="card"><img src="Asset/img/right-bannertop.png" alt="right-bannertop"> </div>
+            <div id="right-bannerbottom" class="card"><img src="Asset/img/right-bannerbottom.png" alt="right-bannerbottom"> </div>
+        </div>
+            
+    </section>
+
+    <section id="menu">
+        <div>
+            <div><p>ALWAYS TASTY BURGER</p></div>
+            <div><p>CHOOSE & ENJOY</p></div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+                </p>
+            </div>
+        </div>
+        
+
+        <div class="flex-container">
+            <div class="card">
+                <img src="Asset/img/burger2.png" alt="Lorem Ipsum 2">
+                <div>
+                    <div class="burger-name">LORUM IPSUM 2</div>
+                    <div class="burger-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                </div>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="Asset/img/burger1.png" alt="Lorem Ipsum 1">
+                <div>
+                    <div class="burger-name">LORUM IPSUM 1</div>
+                    <div class="burger-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                </div>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="card">
+                <img src="Asset/img/burger2.png" alt="Lorem Ipsum 3">
+                <div>
+                    <div class="burger-name">LORUM IPSUM 3</div>
+                    <div class="burger-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</div>
+                </div>
+                <button onclick="addToCart(3)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
